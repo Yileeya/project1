@@ -1,7 +1,8 @@
 <template>
   <div class="hello">
+    <test></test>
     <h1>{{ msg }}</h1>
-    <p>
+    <p>123123
       For a guide and recipes on how to configure / customize this project,<br>
       check out the
       <a href="https://cli.vuejs.org" target="_blank" rel="noopener">vue-cli documentation</a>.
@@ -31,8 +32,10 @@
 </template>
 
 <script>
+import Test from '@/components/test';
 export default {
   name: 'HelloWorld',
+  components: {Test},
   props: {
     msg: String
   }
